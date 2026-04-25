@@ -1,0 +1,259 @@
+header {      /* dark background */
+  color:black;                 /* text color */
+  padding: 30px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  color:black;                  /* lighter text for caption */
+  margin: 0;
+}
+.nav-links{
+  display: flex;
+  gap:20px ;
+    text-align: center;
+    margin:0 400px;
+
+}
+.nav-links a{
+  color:black;
+  font-weight: 600px;
+  padding: 10px 25px;
+  transition: color 0.2 ease;
+}
+.nav-links a:hover{
+  color: white;
+
+}
+.full-width-background {
+  background-color: #f0f0f0;
+  width: 100vw;
+  padding: 0;
+}
+.scroll-img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-in-out;
+}
+
+/* When image is in view, add class */
+.scroll-img.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.image-row {
+  display: flex;                 /* Places images in a row */
+  justify-content: center;      /* Center the row */
+  gap: 100px;                    /* Space between images */
+  flex-wrap: wrap;              /* Wrap if screen is small */
+  margin-top: 20px;
+  background-color:#f0f0f0;
+
+}
+
+.image-row img {
+  width: 500px;                 /* Fixed width for uniform size */
+  height: 450px;                /* Same height */
+  object-fit: cover;            /* Crops to fill area neatly */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.image-row img:hover {
+  transform: scale(1.05);       /* Zoom effect on hover */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 100px;
+}
+
+.photo img {
+    width: 100%;
+    height: 350px;
+    object-fit:cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.photo img:hover {
+    transform: scale(1.08);
+}
+/*adout*/
+/* Reset & base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f8f8;
+    color: hsl(0, 5%, 4%);
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: #080808;
+    color: rgb(249, 249, 250);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.site-header h1 {
+    font-size: 3rem;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    gap: 30px;
+}
+
+.about-image {
+    flex: 1 1 300px;
+    text-align: center;
+}
+
+.about-image img {
+    width: 200%;
+    max-width: 250px;
+    border-radius: 500%;
+    border: 4px solid #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 2 1 400px;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 3%);
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: hsl(0, 0%, 5%);
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #eee;
+    margin-top: 50px;
+}
+/*contact*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100%;
+}
+
+/* Background Image Section */
+.contact-background {
+    background-image: url('bg3.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    padding: 0px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    color: #f4f2f2;
+}
+
+/* Contact Form Styles */
+.contact-form-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color:#ffffff;
+    margin-bottom: 10px;
+}
+
+.contact-form-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    background-color: #ff6600;
+    color: white;
+    padding: 14px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #e65c00;
+}
