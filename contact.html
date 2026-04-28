@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Photography</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+      
+    
+    .header-row h1 {
+      font-family:'Lucida Sans';
+      font-weight: 100;
+      color:#3e5136;
+      font-size: 40px;
+      margin: 0;
+    }
+
+
+    .header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 50px;
+  border-bottom: 1px solid #ccc;
+}
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+        font-family: serif;
+      font-size: 30px;
+      color:#3e5136;
+      margin-bottom: 10px;
+      text-align:center;
+    }
+
+    p.sub {
+      text-align: center;
+      font-size: 16px;
+      color: #777;
+      margin-bottom: 40px;
+    }
+
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .header-row h1 {
+      font-family:'Lucida Sans';
+      font-weight: 100;
+      color:#3e5136;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .header-row nav a {
+        
+      font-family:sans-serif;
+      margin-left: 30px;
+      text-decoration: none;
+      color: #3e5136;
+      font-weight: 500;
+    }
+
+    .header-row nav a.active {
+      color: #bb6b6b;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input, textarea {
+      padding: 14px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+      resize: vertical;
+      transition: border-color 0.3s;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #555;
+      outline: none;
+    }
+
+    button {
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      background-color:  #3e5136;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #444;
+    }
+
+    .contact-info {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 16px;
+      color: #000000;
+    }
+
+    .contact-info p {
+      margin: 6px 0;
+    }
+    
+   .site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3e5136;
+    color: #eee;
+    margin-top: 0 50px;
+}
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+     <div class="header-row">
+    <h1>In The Frames</h1>
+    <nav><div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div></nav>
+    </div>
+    
+  <div class="container">
+    <h1>Contact Me</h1>
+    <p class="sub">I'd love to hear from you! Whether it's for a photoshoot, collaboration, or just to say hi.</p>
+
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="text" name="subject" placeholder="Subject" />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Email: <a href="mailto:inframes@gmail.com">inframes@gmail.com</a></p>
+      <p>Phone: +91 98765 43210</p>
+     
+    </div>
+  </div>
+  
+ <footer class="site-footer">
+        <p>&copy; 2025 In the frames | All Rights Reserved</p>
+    </footer>  <!-- Gallery, About, and Contact will come later -->
+
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+    }
+    
+    .masonry {
+      column-count: 3;         /* Number of columns */
+      column-gap: 24px;        /* Space between columns */
+      padding: 40px;
+    }
+
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .header-row h1 {
+      font-family:'Lucida Sans';
+      font-weight: 100;
+      color:#3e5136;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .header-row nav a {
+        
+      font-family:sans-serif;
+      margin-left: 30px;
+      text-decoration: none;
+      color:#3e5136;
+      font-weight: 500;
+    }
+
+    .header-row nav a.active {
+      color: #bb6b6b;
+    }
+
+    .masonry img {
+      width: 100%;
+      display: block;
+      margin-bottom: 24px;
+      border-radius: 12px;
+      break-inside: avoid;     /* Prevents image from breaking between columns */
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .masonry img:hover {
+      transform: scale(1.02);
+    }
+    .img-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.img-container img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  transition: opacity 0.4s ease;
+}
+
+.overlay p {
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  padding: 10px;
+}
+
+.img-container:hover .overlay {
+  opacity:3;
+}
+   
+   .site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color:  #3e5136;
+    color: #eee;
+    margin-top: 0 50px;
+}
+
+    @media (max-width: 1024px) {
+      .masonry {
+        column-count: 2;
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .masonry {
+        column-count: 1;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+     <div class="header-row">
+    <h1>In The Frames</h1>
+    <nav><div class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div></nav>
+    </div>
+    
+ <div class="masonry">
+    <div class="img-container">
+            <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img2.jpg" alt="Portrait">
+    <div class="overlay">
+      <p>Portrait</p>
+    </div>
+    </div>
+     
+    <div class="img-container">
+    <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img4.jpg" alt="Fashion">
+    <div class="overlay">
+      <p>Fashion</p>
+    </div>
+    </div>
+    <div class="img-container">
+    <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img1.jpg" alt="Aerial">
+    <div class="overlay">
+      <p>Aerial/Drone</p>
+    </div>
+    </div>
+    
+     <div class="img-container"> 
+    <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img9.jpg" alt="Travel">
+    <div class="overlay">
+      <p>Travel</p>
+    </div>
+    </div>
+   <div class="img-container">
+    <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img3.jpg" alt="Landscape">
+    <div class="overlay">
+      <p>Landscape</p>
+    </div>
+    </div>
+    
+     <div class="img-container">
+    <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img5.jpg" alt="Street">
+    <div class="overlay">
+      <p>Street</p>
+    </div>
+    </div>
+    <div class="img-container">
+    <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img18.jpg" alt="Food">
+    <div class="overlay">
+      <p>Food</p>
+    </div>
+    </div>
+    <div class="img-container">
+    <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img7.jpg" alt="Wildlife">
+    <div class="overlay">
+      <p>Wildlife</p>
+    </div>
+    </div>
+     <div class="img-container">    
+
+    <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img8.jpg" alt="B&W">
+    <div class="overlay">
+      <p>B & W</p>
+    </div>
+    </div>
+    <div class="img-container">    
+    <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img10.jpg" alt="Macro">
+    <div class="overlay">
+      <p>Macro</p>
+    </div>
+    </div>
+    <div class="img-container">    
+    <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img11.jpg" alt="Architecture">
+    <div class="overlay">
+      <p>Architecture</p>
+    </div>
+    </div>
+    <div class="img-container">    
+    <img src="C:\Users\ritha\OneDrive\Documents\sharmila\photographh\photos\img12.jpg" alt="Sport">
+    <div class="overlay">
+      <p>Sport</p>
+    </div>
+    </div>
+    <!-- Add as many images as you want -->
+ </div>
+ <footer class="site-footer">
+        <p>&copy; 2025 In the frames | All Rights Reserved</p>
+    </footer>  <!-- Gallery, About, and Contact will come later -->
+
+</body>
+</html>
