@@ -1,40 +1,241 @@
-/* Common resets */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-/* Container */
-.container { max-width: 1100px; margin: 0 auto; padding: 0 15px; }
-/* Header */
-.top-bar { background: #00539C; color: #fff; font-size: 0.9rem; padding: 5px 0; }
-.navbar { background: #FFC72C; }
-.navbar .logo { font-size: 1.8rem; padding: 10px 0; display: inline-block; }
-.nav-menu { list-style: none; float: right; }
-.nav-menu li { display: inline-block; margin-left: 20px; }
-.nav-menu a { text-decoration: none; color: #00539C; font-weight: bold; }
-/* Hero */
-.hero { background: url('hero.jpg') center/cover no-repeat; height: 1000px; display: flex; align-items: center; }
-.hero h2 { font-size: 2rem; color: #fff; }
-.hero p { color: #f0f0f0; }
-img {
-  transition: box-shadow 0.3s ease-in-out;
+   body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://images.unsplash.com/photo-1580411787627-396d40a845e2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;            /* ← Scales image to cover the whole page */
+  background-repeat: no-repeat;      /* ← Prevents the image from repeating */
+  background-position: center center;/* ← Centers the image */
+  background-attachment: fixed;      /* ← Makes the background stay fixed on scroll */
+  color: #000;
 }
 
-img:hover {
-  box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 50px;
+      border-bottom: 1px solid #bebaba;
+    }
+
+    .header-row h1 {
+      font-family:'Lucida Sans';
+      font-weight: 100;
+      color:#3d5135;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .header-row nav a {
+      font-family:sans-serif;
+      margin-left: 30px;
+      text-decoration: none;
+      color:#3d5135;
+      font-weight: 500;
+    }
+ 
+/* Reset & Font */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
 }
-/* Sections */
-.section { padding: 50px 0; }
-.section h2 { margin-bottom: 20px; color: #00539C; }
-/* Courses Grid */
-.courses-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); grid-gap: 20px; }
-.course-card { background: #f4f4f4; padding: 20px; text-align: center; border-radius: 5px; }
-/* Forms */
-.contact-form label { display: block; margin-bottom: 10px; }
-.contact-form input, .contact-form textarea { width: 100%; padding: 8px; margin-top: 5px; }
-.contact-form button { background: #00539C; color: #fff; padding: 10px 15px; border: none; }
-.contact-form button:hover.stars {
-display :block;
-filter:drop-shadow(0 0 10px #fffdef);
- background: #004080; 
-cursor: pointer; }
-/* Footer */
-footer { background: #333; color: #f4f4f4; text-align: center; padding: 20px 0; }
+
+.hero-text {
+  text-align: center;
+  color: #3e5136;
+  background-image: url(''); /* soft green like in image */
+  margin-top: 180px; /* adjust based on background */
+} 
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-family: 'Georgia', serif;
+  font-weight:400;
+  line-height: 1.4;
+}
+
+.hero-text .subtext {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: #5a6d4d;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.hero-text h4{
+  
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  line-height: 1.9;
+  padding-bottom:2%;
+  color: #5a6d4d;
+  margin-bottom:2%
+  
+}
+.hero-button {
+  display: inline-block;
+  padding: 12px 28px;
+  margin-top: 30px;
+  border: 1px solid #3e5136;
+  color: #3e5136;
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #3e5136;
+  color: #fff;
+}
+
+.text h4{
+  text-align: center;
+  color: #3d5135;
+  font-size: 30px;
+  padding-bottom: 2%;
+  font-family: Georgia;
+}
+
+/* Fixed Background Image Section */
+.hero-section {
+  height: 100vh;
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section h1{
+  font-family: 'Trebuchet MS';
+  color: rgb(125, 197, 173);
+}
+
+.hero-section button {
+  padding: 15px 30px;
+  background: white;
+  color:rgb(125, 197, 173);
+  border: 1px solid rgb(125, 197, 173);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* White Image Box Section */
+.image-section {
+  background-color: white;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image-section img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-section img:hover {
+  transform: scale(1.05);
+}
+
+.camera-used {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.camera-used h2 {
+  font-size: 2em;
+  color: #3b4e3b;
+  margin-bottom: 30px;
+}
+
+.camera-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
+  justify-content: center;
+  gap: 30px;
+}
+
+.camera-item {
+  width: 250px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.camera-item:hover {
+  transform: scale(1.05);
+}
+
+.camera-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.camera-item p {
+  margin-top: 10px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+
+.intro-section {
+  background-color: #3d5135;  /* Dark green block */
+  color: white;
+  padding: 50px 50px;
+  text-align: center;
+}
+
+.intro-content h2 {
+  font-size: 3rem;
+  letter-spacing: 4px;
+  text-align: left;
+  padding:0 60px;
+  margin-bottom: 40px;
+  font-weight: 40;
+}
+
+.intro-content p {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size:20px;
+  padding: 0 70px;
+  line-height: 1.9;
+  font-family: 'Times New Roman';
+}
+
+
+   .site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color:#3d5135;
+    color: #eee;
+    margin-top: 0 50px;
+}
+/* Marquee Section */
+.carousel {
+  background-color: #f2f2f2;
+  padding: 20px 0;
+}
+
+.carousel img {
+  height: 200px;
+  width: 300px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+}
